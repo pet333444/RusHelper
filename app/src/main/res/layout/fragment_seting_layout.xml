@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="250dp">
+    <ImageView
+        android:src="@drawable/back_groud"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageView1"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText" />
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText__money_frag"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:ems="12"
+                android:hint="Доход"
+                android:inputType="numberDecimal"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/editText_age_frag"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:ems="12"
+                android:hint="Возраст"
+                android:inputType="numberDecimal"
+                android:paddingLeft="5dp" />
+        </LinearLayout>
+
+        <AutoCompleteTextView
+            android:id="@+id/editText_region_frag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:background="@drawable/edit_text_style"
+            android:paddingLeft="5dp"
+            android:hint="Введите регион"
+            android:inputType="textEmailAddress" />
+
+        <SeekBar
+            android:id="@+id/seekBar_children_frag"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="4"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/textView_childr_frag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Дети            1                 2               3     Более" />
+
+        <SeekBar
+            android:id="@+id/seekBar_disab_frag"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="4"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/textView_dis_frag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="Инвалид.     4                  3                  2                1" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_liq_frag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ликвидатор" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_gowerment_frag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Чиновник" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox_orphan_frag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Сирота" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/OK_frag"
+                        android:layout_width="150dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/button_stroke_yellow_press_white"
+                        android:text="Принять"
+                        android:textAllCaps="false"
+                        android:textColor="@color/blue_mini"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/Cancel_frag"
+                        android:layout_width="150dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/button_stroke_yellow_press_white"
+                        android:text="Отмена"
+                        android:textAllCaps="false"
+                        android:textColor="@color/blue_mini"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

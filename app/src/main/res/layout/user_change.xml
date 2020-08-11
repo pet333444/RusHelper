@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/change_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back_groud"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container2"
+            android:layout_width="match_parent"
+            android:layout_height="679dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:ignore="UselessParent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:id="@+id/container3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/home_facilities"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/button_for_change_press_and_unpressed"
+                            android:src="@drawable/home"
+                            tools:ignore="ContentDescription,RtlHardcoded" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="13dp"
+                            android:text="Недвижимость"
+                            android:textColor="@color/black"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/line2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/realty_facilities"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/button_for_change_press_and_unpressed"
+                            android:src="@drawable/car"
+                            tools:ignore="ContentDescription,RtlHardcoded" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="13dp"
+                            android:text="Иное имущество"
+                            android:textColor="@color/black"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/line3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/education_facilities"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/button_for_change_press_and_unpressed"
+                            android:src="@drawable/dialog"
+                            tools:ignore="ContentDescription,RtlHardcoded" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="13dp"
+                            android:text="Образование"
+                            android:textColor="@color/black"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/line4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/tax_deduction"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/button_for_change_press_and_unpressed"
+                            android:src="@drawable/snail"
+                            tools:ignore="ContentDescription,RtlHardcoded" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="13dp"
+                            android:text="Вычеты"
+                            android:textColor="@color/black"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/line5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/other_facilities"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/button_for_change_press_and_unpressed"
+                            android:src="@drawable/other"
+                            tools:ignore="ContentDescription,RtlHardcoded" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="13dp"
+                            android:text="Иные виды льгот"
+                            android:textColor="@color/black"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|left"
+        android:orientation="horizontal"
+        tools:ignore="RtlHardcoded">
+
+        <ImageButton
+            android:id="@+id/button_back1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="110dp"
+            android:background="@drawable/button_for_change_press_and_unpressed"
+            android:src="@drawable/row"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/container7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|right"
+        android:orientation="horizontal"
+        tools:ignore="RtlHardcoded">
+
+        <ImageButton
+            android:id="@+id/setting_facilities"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_for_change_press_and_unpressed"
+            android:src="@drawable/settings"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+</RelativeLayout>

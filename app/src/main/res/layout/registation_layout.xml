@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@drawable/back_groud"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageView1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/Registration_text"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="InefficientWeight,SpUsage" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/editText_e_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:background="@drawable/edit_text_style"
+            android:paddingLeft="5dp"
+            android:hint="Введите e-mail*"
+            android:inputType="textEmailAddress"
+            tools:ignore="Autofill,HardcodedText,RtlHardcoded,RtlSymmetry" />
+        <EditText
+            android:id="@+id/editText_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_style"
+            android:paddingLeft="5dp"
+            android:ems="12"
+            android:hint="Введите пароль*"
+            android:inputType="textPassword"
+            tools:ignore="Autofill,HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText__money"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:ems="12"
+                android:hint="Доход"
+                android:inputType="numberDecimal"
+                android:paddingLeft="5dp"
+                tools:ignore="Autofill,HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/editText_age"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:ems="12"
+                android:hint="Возраст"
+                android:inputType="numberDecimal"
+                android:paddingLeft="5dp"
+                tools:ignore="Autofill,HardcodedText,RtlHardcoded,RtlSymmetry" />
+        </LinearLayout>
+
+        <AutoCompleteTextView
+            android:id="@+id/editText_region"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:background="@drawable/edit_text_style"
+            android:paddingLeft="5dp"
+            android:hint="Регион"
+            android:inputType="textEmailAddress"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+        <SeekBar
+            android:id="@+id/seekBar_children"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="4"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/textView_childr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Дети         1              2             3       Более"
+            tools:ignore="HardcodedText" />
+
+        <SeekBar
+            android:id="@+id/seekBar_disab"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="4"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/textView_dis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="Инвалид    4                 3              2              1"
+            tools:ignore="HardcodedText" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_liq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ликвидатор"
+                        tools:ignore="HardcodedText,InefficientWeight" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_gowerment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Чиновник"
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox_orphan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Сирота"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/registration_ok"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_stroke_yellow_press_white"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:text="@string/Exept"
+            android:textColor="@color/blue_mini"  />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/button_back_autor_reg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="100dp"
+                android:background="@drawable/button_for_change_press_and_unpressed"
+                android:scaleType="centerCrop"
+                android:src="@drawable/row"
+                tools:ignore="RtlHardcoded" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

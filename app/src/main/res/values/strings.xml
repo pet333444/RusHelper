@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FinBumHelper</string>
+    <string name="start">Начать</string>
+    <string name="back">Назад</string>
+    <string name="search">Поиск</string>
+    <string name="add">Добавить</string>
+    <string name="SignIn_text">Войти</string>
+    <string name="Registration_text">Регистрация</string>
+    <string name="sign_in_text_view">Вход</string>
+    <string name="Exept">Принять</string>
+</resources>

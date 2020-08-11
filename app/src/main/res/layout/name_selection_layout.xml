@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#a7a7ab"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="200dp"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:id="@+id/btn_selection_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginBottom="55dp"
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|left"
+        android:orientation="horizontal"
+        tools:ignore="RtlHardcoded">
+
+        <ImageButton
+            android:id="@+id/button_back__select"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/button_for_change_press_and_unpressed"
+            android:scaleType="centerCrop"
+            android:src="@drawable/row" />
+    </LinearLayout>
+</RelativeLayout>

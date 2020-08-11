@@ -1,0 +1,2 @@
+rootProject.name='RusBumHelper'
+include ':app'
